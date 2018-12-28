@@ -1,0 +1,13 @@
+namespace Message;
+
+table Person {
+  name:string;
+  id:int32;
+  email:string;
+}
+
+table Addressbook {
+  people:[Person];
+}
+
+root_type Addressbook;
